@@ -20,8 +20,8 @@ body {
 }
 
 .jumbotron {
-    padding: 70px 30px 70px 30px;
-    margin: 0px auto;
+    padding: 70px 30px 70px 30px !important;
+    margin: 0px auto !important;
     background-color: #9575CD !important;
     color: floralwhite;
     border-radius: 0px !important;
