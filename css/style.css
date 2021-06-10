@@ -10,6 +10,15 @@
     min-height: 400px;
 }
 
+body {
+    padding: 50px 0px 0px 0px !important;
+    z-index: 0 !important;
+}
+
+.navbar-dark {
+    background-color: #512DA8 !important;
+}
+
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
