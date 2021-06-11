@@ -15,6 +15,11 @@ body {
     z-index: 0 !important;
 }
 
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
 .heading {
     color: white;
     padding: 1.5%;
