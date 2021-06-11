@@ -36,6 +36,13 @@
     min-height: 300px;
 }
 
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
 body {
     padding: 50px 0px 0px 0px !important;
     z-index: 0 !important;
