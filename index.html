@@ -94,11 +94,75 @@
                     <img src="./css/img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center text-center ">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reserveform">Reserve Table</a>
+                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reserveform">Reserve Table</a>
+
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="reserveform" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="optradio" class="col-12 col-md-3 col-form-label">Number of Guests</label>
+                            <label class="radio-inline ml-3">
+                                                <input type="radio" name="optradio" checked> 1 
+                                              </label>
+                            <label class="radio-inline ml-3">
+                                                <input type="radio" name="optradio"> 2 
+                                              </label>
+                            <label class="radio-inline ml-3 ">
+                                                <input type="radio" name="optradio"> 3 
+                                              </label>
+                            <label class="radio-inline ml-3">
+                                                <input type="radio" name="optradio"> 4 
+                                              </label>
+                            <label class="radio-inline ml-3">
+                                                <input type="radio" name="optradio"> 5 
+                                              </label>
+                            <label class="radio-inline ml-3">
+                                                <input type="radio" name="optradio"> 6 
+                                              </label>
+                        </div>
+                        <div class="form-group row">
+                            <label for="date" class="col-12 col-md-3 col-form-label">Section</label>
+                            <div class="col-6 col-md-4 ml-0">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                          <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                        </label>
+                                    <label class="btn btn-danger">
+                                          <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                        </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="date" class="col-12 col-md-3 col-form-label">Date and Time</label>
+                            <div class="col-6 col-md-4 ml-0">
+                                <input type="date" class="form-control" id="date" name="Date" placeholder="Date">
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <input type="time" class="form-control" id="time" name="Time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-md offset-3" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-md ml-1">Reserve</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row row-content">
@@ -143,51 +207,59 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-    <div class="row row-content justify-content-center" id="reserveform">
-        <div class="col-sm-8">
-            <div class="card">
-                <h2 class="card-title bg-warning heading">Reserve a Table</h2>
-                <div class="card-body">
-                    <form>
-                        <div class="form-group row">
-                            <label for="optradio" class="col-12 col-md-2 col-form-label">Number of Guests</label>
-                            <label class="radio-inline ml-3">
-                                <input type="radio" name="optradio" checked> 1 
-                              </label>
-                            <label class="radio-inline ml-3">
-                                <input type="radio" name="optradio"> 2 
-                              </label>
-                            <label class="radio-inline ml-3 ">
-                                <input type="radio" name="optradio"> 3 
-                              </label>
-                            <label class="radio-inline ml-3">
-                                <input type="radio" name="optradio"> 4 
-                              </label>
-                            <label class="radio-inline ml-3">
-                                <input type="radio" name="optradio"> 5 
-                              </label>
-                            <label class="radio-inline ml-3">
-                                <input type="radio" name="optradio"> 6 
-                              </label>
-                        </div>
-                        <div class="form-group row">
-                            <label for="date" class="col-12 col-md-2 col-form-label">Date and Time</label>
-                            <div class="col-6 col-md-3">
-                                <input type="date" class="form-control" id="date" name="Date" placeholder="Date">
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <input type="time" class="form-control" id="time" name="Time" placeholder="Time">
-                            </div>
-                        </div>
-                        <a type="submit" class="btn btn-primary offset-2">Reserve</a>
-                    </form>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Our Lipsmacking Culinary Creations</h3>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./css/img/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger"> HOT</span> <span class="badge badge-pill badge-secondary"> ₹255.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="col col-sm col-md">
+
+
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="./css/img/buffet.png" alt="Uthappizza">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="media col-12 col-sm-8 order-sm-first">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="./css/img/alberto.png" alt="Alberto Somayya">
+                <div class="media-body">
+                    <h2 class="mt-0">Alberto Somayya</h2>
+                    <h4>Executive Chef</h4>
+                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+
+        </div>
+
     </div>
+
 
     <footer class="footer">
         <div class="container">
@@ -238,11 +310,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
+    <!-- tooltip script  -->
+    <!-- <script>
         $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
