@@ -29,6 +29,23 @@
     height: 300px;
 }
 
+.modal .modal-header {
+    background: #512da8;
+    color: floralwhite;
+}
+
+.modal .modal-header .close {
+    color: floralwhite;
+}
+
+.modal .modal-body {
+    background: #d1c4e9;
+}
+
+.modal .modal-footer {
+    background: #9575cd;
+}
+
 .carousel-item img {
     position: absolute;
     top: 0;
