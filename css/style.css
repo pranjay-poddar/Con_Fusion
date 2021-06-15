@@ -1,3 +1,35 @@
+.grow {
+    transition: all 1s ease-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.cool-link {
+    display: inline-block;
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.success {
+    color: white;
+}
+
 .row-header {
     margin: 0px auto;
     padding: 0px;
@@ -22,15 +54,15 @@
 }
 
 .carousel {
-    background: #512DA8;
+    background: #101820ff;
 }
 
 .carousel-item {
-    height: 300px;
+    height: 500px;
 }
 
 .modal .modal-header {
-    background: #512da8;
+    background: #101820ff;
     color: floralwhite;
 }
 
@@ -39,11 +71,19 @@
 }
 
 .modal .modal-body {
-    background: #d1c4e9;
+    background: rgb(226, 255, 241);
+    border: 0;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #101820ff !important;
+    border: none;
+    border-color: #101820ff !important;
 }
 
 .modal .modal-footer {
-    background: #9575cd;
+    background: #006b38ff;
 }
 
 .carousel-item img {
@@ -53,7 +93,8 @@
     min-height: 300px;
 }
 
-#carouselButton {
+#carouselButton,
+#carouselButton2 {
     right: 0px;
     position: absolute;
     bottom: 0px;
@@ -76,25 +117,64 @@ body {
 }
 
 .navbar-dark {
-    background-color: #512DA8 !important;
+    background-color: #101820ff !important;
 }
 
 .jumbotron {
     padding: 70px 30px 70px 30px !important;
     margin: 0px auto !important;
-    background-color: #9575CD !important;
+    background-color: #006b38ff !important;
     color: floralwhite;
     border-radius: 0px !important;
+}
+
+.jumbotron img {
+    height: 150px;
+    width: 150px;
+}
+
+.media img {
+    height: 150px;
+    width: 150px;
+}
+
+.bg-primary {
+    background-color: #101820ff !important;
 }
 
 address {
     font-size: 80%;
     margin: 0px;
-    color: #0f0f0f;
+}
+
+.footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(116, 192, 155);
 }
 
 .footer {
-    background-color: #D1C4E9;
+    background-color: #101820ff;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
+    color: white;
+}
+
+.breadcrumb {
+    color: white !important;
+    background-color: rgb(30, 38, 46) !important;
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width:575px) {
+    .reservebtn {
+        margin-top: 10%;
+    }
 }

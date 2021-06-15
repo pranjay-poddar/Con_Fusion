@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Ristorante Con Fusion</title>
+    <title>Con-Fusion Restaurant</title>
     <link rel="shortcut icon" type="image/png" href="./css/images/favicon.png" />
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -29,12 +29,12 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="./css/img/logo.png" height="30" width="41"></a>
+
             <div class="collapse navbar-collapse text-center" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./menu.html"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text" style="cursor: pointer;">
@@ -86,15 +86,15 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
+                <div class="col-12 col-sm-6 col-md-6">
+                    <h1>Restaurant Con-Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-3 align-content-center text-center">
-                    <img src="./css/img/logo.png" class="img-fluid">
+                <div class="col-12 col-sm-6 col-md-3 align-content-center text-center">
+                    <img src="./css/img/logo.png" class="img-fluid grow">
                 </div>
-                <div class="col-12 col-sm-3 align-self-center text-center ">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reserveform">Reserve Table</a>
+                <div class="col-12 col-sm-12 col-md-3 align-self-center text-center ">
+                    <a role="button" class="btn btn-block nav-link reservebtn btn-primary grow" data-toggle="modal" data-target="#reserveform">Reserve Table</a>
 
                 </div>
             </div>
@@ -164,35 +164,36 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container d-none d-sm-block">
         <div class="row row-content">
             <div class="col">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="./css/img/uthappizza.png" alt="Uthappizza">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2>Uthappizza <span class="badge badge-danger"> HOT</span> <span class="badge badge-pill badge-secondary"> ₹255.99</span></h2>
-                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="./css/img/buffet.png" alt="buffet">
-                            <div class="carousel-caption d-none d-md-block">
+                            <img class="d-block img-fluid" src="./css/img/2.png" alt="buffet">
+                            <div class="carousel-caption ">
                                 <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW</span></h2>
                                 <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
                             </div>
                         </div>
+                        <div class="carousel-item ">
+                            <img class="d-block img-fluid" src="./css/img/1.png" alt="Burger">
+                            <div class="carousel-caption ">
+                                <h2>Burger Mac <span class="badge badge-danger"> HOT</span> <span class="badge badge-pill badge-secondary"> ₹255.99</span></h2>
+                                <p class="d-none d-sm-block">A unique combination of Italian burger, filled with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="./css/img/alberto.png" alt="alberto">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2 class="mt-0">Alberto Somayya</h2>
+                            <img class="d-block img-fluid" src="./css/img/3.png" alt="alberto">
+                            <div class="carousel-caption ">
+                                <h2 class="mt-0">Alberto Singh</h2>
                                 <h4>Executive Chef</h4>
                                 <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
                                 </p>
                             </div>
                         </div>
-                        <ol class="carousel-indicators">
+                        <ol class="carousel-indicators ">
                             <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#mycarousel" data-slide-to="1"></li>
                             <li data-target="#mycarousel" data-slide-to="2"></li>
@@ -213,56 +214,56 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Our Lipsmacking Culinary Creations</h3>
-            </div>
-            <div class="col col-sm order-sm-first col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./css/img/uthappizza.png" alt="Uthappizza">
-                    <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger"> HOT</span> <span class="badge badge-pill badge-secondary"> ₹255.99</span></h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+    <!-- for mobile screens  -->
+    <div class="container d-block d-sm-none">
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="./css/img/4.png" alt="buffet">
+                            <div class="carousel-caption ">
+                                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW</span></h2>
+                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block img-fluid" src="./css/img/5.png" alt="Burger">
+                            <div class="carousel-caption ">
+                                <h2>Burger Mac <span class="badge badge-danger"> HOT</span> <span class="badge badge-pill badge-secondary"> ₹255.99</span></h2>
+                                <p class="d-none d-sm-block">A unique combination of Italian burger, filled with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="./css/img/6.png" alt="alberto">
+                            <div class="carousel-caption ">
+                                <h2 class="mt-0">Alberto Singh</h2>
+                                <h4>Executive Chef</h4>
+                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                                </p>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators d-none d-sm-block">
+                            <li data-target="#mycarousel2" data-slide-to="0" class="active"></li>
+                            <li data-target="#mycarousel2" data-slide-to="1"></li>
+                            <li data-target="#mycarousel2" data-slide-to="2"></li>
+                        </ol>
+                        <a class="carousel-control-prev" href="#mycarousel2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                        <button class="btn btn-danger btn-sm" id="carouselButton2">
+                                <span id="carousel-button-icon" class="fa fa-pause"></span>
+                            </button>
+
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col col-sm col-md">
-
-
-                <div class="media">
-                    <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW</span></h2>
-                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
-                    </div>
-                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="./css/img/buffet.png" alt="Uthappizza">
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-content align-items-center">
-            <div class="media col-12 col-sm-8 order-sm-first">
-                <img class="d-flex mr-3 img-thumbnail align-self-center" src="./css/img/alberto.png" alt="Alberto Somayya">
-                <div class="media-body">
-                    <h2 class="mt-0">Alberto Somayya</h2>
-                    <h4>Executive Chef</h4>
-                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-
-        </div>
-
     </div>
 
 
@@ -274,7 +275,7 @@
                     <ul class="list-unstyled ">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
                         <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
@@ -292,12 +293,12 @@
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon btn-dark" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-social-icon btn-dark grow" href="https://github.com/pranjay-poddar"><i class="fa fa-github"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin grow" href="https://www.linkedin.com/in/pranjay-poddar/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-facebook grow" href="https://www.facebook.com/PRJ834/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter grow" href="https://twitter.com/PranjayPoddar"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google grow" href="https://www.youtube.com/catalyticoriginals"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon btn-info grow" href="mailto:pranjaypoddar@gmail.com"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
             </div>
@@ -336,6 +337,22 @@
                     $("#mycarousel").carousel('cycle');
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');
+                }
+            });
+        });
+        $(document).ready(function() {
+            $("#mycarousel2").carousel({
+                interval: 2000
+            });
+            $("#carouselButton2").click(function() {
+                if ($("#carouselButton2").children("span").hasClass('fa-pause')) {
+                    $("#mycarousel2").carousel('pause');
+                    $("#carouselButton2").children("span").removeClass('fa-pause');
+                    $("#carouselButton2").children("span").addClass('fa-play');
+                } else if ($("#carouselButton2").children("span").hasClass('fa-play')) {
+                    $("#mycarousel2").carousel('cycle');
+                    $("#carouselButton2").children("span").removeClass('fa-play');
+                    $("#carouselButton2").children("span").addClass('fa-pause');
                 }
             });
         });
