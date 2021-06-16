@@ -177,4 +177,18 @@ address {
     .reservebtn {
         margin-top: 10%;
     }
+    .h3,
+    h3 {
+        font-size: 1rem !important;
+    }
+    .h2,
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .badge {
+        font-size: 50% !important;
+    }
 }
